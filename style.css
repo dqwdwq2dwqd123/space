@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    background-color: #000;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+/* Universe Container */
+.universe {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, #1a237e, #000);
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 2rem;
+    color: #ffd54f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+p {
+    margin-bottom: 40px;
+    color: #ffecb3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Light */
+}
+
+/* Planets */
+.planet {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #ff7043, #bf360c);
+    border-radius: 50%;
+    cursor: pointer;
+    animation: orbit 10s infinite linear;
+}
+
+#planet-joy {
+    background: radial-gradient(circle, #ff7043, #bf360c);
+}
+
+#planet-us {
+    background: radial-gradient(circle, #42a5f5, #1565c0);
+}
+
+#planet-dreams {
+    background: radial-gradient(circle, #66bb6a, #2e7d32);
+}
+
+#planet-trust {
+    background: radial-gradient(circle, #ab47bc, #6a1b9a);
+}
+
+#planet-adventure {
+    background: radial-gradient(circle, #ffb74d, #e65100);
+}
+
+#planet-memories {
+    background: radial-gradient(circle, #29b6f6, #01579b);
+}
+
+#planet-love {
+    background: radial-gradient(circle, #f06292, #ad1457);
+}
+
+#planet-grateful {
+    background: radial-gradient(circle, #11626d, #ad1457);
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #212121;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    color: #fff;
+    position: relative;
+    font-family: 'Roboto', sans-serif; /* Ensure font applies here too */
+}
+
+.popup-content h2 {
+    margin: 0;
+    color: #ffd54f;
+    font-weight: 500; /* Medium */
+}
+
+.popup-content p {
+    margin-top: 10px;
+    color: #e0e0e0;
+    font-weight: 300; /* Light */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f44336;
+}
+
+.close-btn:hover {
+    color: #e57373;
+}
+
+/* Animations */
+@keyframes orbit {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #fff, #ccc);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}

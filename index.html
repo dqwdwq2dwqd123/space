@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazzybomb Cannot see the title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="universe">
+        <h1>You Are My Universe, Maria</h1>
+        <p>Click on the planets to explore our galaxy of love!</p>
+
+        <!-- Planets -->
+        <div class="planet" id="planet-joy" style="top: 20%; left: 30%;" onclick="showMessage('Planet Joy', 'This planet is filled with our happiest moments: from meeting you Maria, to every memory we have ever shared because you are my joy Mazzybomb.')"></div>
+        <div class="planet" id="planet-us" style="top: 50%; left: 60%;" onclick="showMessage('Planet Us', 'This planet holds all the reasons why we’re perfect together: our bond, our trust, and our endless love we have for each other.')"></div>
+        <div class="planet" id="planet-dreams" style="top: 70%; left: 40%;" onclick="showMessage('Planet Dreams', 'This planet represents our shared dreams and goals for the future. I can’t wait to achieve them with you.')"></div>
+        <div class="planet" id="planet-trust" style="top: 30%; left: 70%;" onclick="showMessage('Planet Trust', 'This planet symbolises the deep trust we’ve built together, the foundation of our love.')"></div>
+        <div class="planet" id="planet-adventure" style="top: 80%; left: 20%;" onclick="showMessage('Planet Adventure', 'This planet is all about the fun adventures we are going to go on and I cannot wait to see what the future holds for us Maria!')"></div>
+        <div class="planet" id="planet-memories" style="top: 40%; left: 10%;" onclick="showMessage('Planet Memories', 'This planet stores all our cherished memories, big and small, that make us smile every day.')"></div>
+        <div class="planet" id="planet-love" style="top: 10%; left: 50%;" onclick="showMessage('Planet Love', 'This is the heart of our universe, where every piece of our story is bound by love there is also a certain candle here.')"></div>
+        <div class="planet" id="planet-grateful" style="top: 60%; left: 80%;" onclick="showMessage('Planet Grateful', 'Maria, this planet holds all the gratitude I feel for having you in my life. Every moment with you is a gift, and I am endlessly thankful for your kindness, your laughter, and the love you bring into my world..')"></div>
+        <!-- Stars -->
+        <div class="star" style="top: 15%; left: 25%;" onclick="showStarMessage('I love you to the stars and back!')"></div>
+        <div class="star" style="top: 50%; left: 40%;" onclick="showStarMessage('You mean everything to me, Maria.')"></div>
+        <div class="star" style="top: 30%; left: 60%;" onclick="showStarMessage('Every moment with you feels like magic.')"></div>
+        <div class="star" style="top: 70%; left: 80%;" onclick="showStarMessage('You light up my life like the brightest star.')"></div>
+        <div class="star" style="top: 40%; left: 10%;" onclick="showStarMessage('Forever isn’t long enough with you.')"></div>
+        <div class="star" style="top: 20%; left: 80%;" onclick="showStarMessage('You are my favourite person, Maria.')"></div>
+        <div class="star" style="top: 60%; left: 20%;" onclick="showStarMessage('Being with you is the best adventure.')"></div>
+        <div class="star" style="top: 75%; left: 50%;" onclick="showStarMessage('You complete me, Maria.')"></div>
+        <div class="star" style="top: 10%; left: 70%;" onclick="showStarMessage('Maria, you are my other half.')"></div>
+
+        <!-- Popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">×</span>
+                <h2 id="planet-title"></h2>
+                <p id="planet-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
